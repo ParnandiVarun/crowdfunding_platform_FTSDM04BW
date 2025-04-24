@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f4f4f4;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 0;
+}
+
+.nav-left img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.nav-left h2 {
+  font-weight: bold;
+  color: #00796b;
+  margin-left: 0;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-right a.link {
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+  font-size: 16px;
+  padding: 10px 10px;
+}
+
+.nav-right .link:hover {
+  padding: 7px 10px;
+  background-color: rgb(12, 148, 141);
+  color: white;
+  border-radius: 5px;
+  margin: 4px;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  background-color: white;
+  padding: 0; /* ensures no unwanted space */
+  box-shadow: 0 0 8px 2px rgba(6, 144, 55, 0.19);
+}
+
+.nav-right button {
+  padding: 8px 16px;
+  border: none;
+  background-color: rgb(12, 148, 141);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 5px 2px rgba(6, 144, 55, 0.19);
+}
+
+.nav-right button:hover {
+  background: black;
+  color: white;
+}
+
+nav span.material-symbols-outlined {
+  display: inline;
+  padding: 4px 2px;
+
+  box-shadow: 0 0 5px 2px rgba(6, 144, 55, 0.19);
+}
+
+@media (width <= 900px) {
+  nav span.material-symbols-outlined {
+    display: inline;
+  }
+  nav > div:nth-of-type(2) {
+    display: none;
+  }
+}
+
+@media (width >=900px) {
+  nav span.material-symbols-outlined {
+    display: none;
+  }
+}
+
+.hero-part h2 {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.826);
+  margin-bottom: 15px;
+}
+
+.hero-part p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: rgba(0, 0, 0, 0.752);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.create-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 3px rgba(6, 144, 55, 0.19);
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.wizard-box,
+.dashboard-box,
+.supporter-box,
+.reward-box {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px dashed #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-part {
+  text-align: center;
+  padding: 60px 20px;
+  background-image: url("https://www.csrmandate.org/wp-content/uploads/2022/07/Milaap-Doctors-help-expand-the-reach-of-medical-crowdfunding-industry2-e1656933831193-1024x665.jpg"); /* Ensure the path matches your project structure */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 62vh;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: start;
+  gap: 20px;
+  padding: 50px 30px;
+  background-color: #004d40;
+  color: white;
+  text-align: left;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-column p,
+.footer-column ul li,
+.footer-column a {
+  font-size: 14px;
+  color: #e0f2f1;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column a:hover {
+  color: #b2dfdb;
+}
+
+/* Center column for the button */
+.footer-center-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 3 / 4;
+}
+
+.start-fundraiser-btn {
+  background-color: #009688;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.start-fundraiser-btn:hover {
+  background-color: #00796b;
+}
+
+.footer-bottom {
+  background-color: #00332e;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: white;
+}

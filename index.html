@@ -3,7 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Crowdfunding website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div id="container">
+        <nav>
+          <div class="nav-left">
+            <img id="img" src="img/crowdfund_logo.jpg" />
+            <h2>Together</h2>
+          </div>
+
+          <div class="nav-right" id="nav-menu">
+            <a class="link" href="#">Home</a> <a class="link" href="#">Donate</a
+            ><a class="link" href="#">Lend</a
+            ><a class="link" href="#">Pricing</a>
+            <a href="login.html"><button>Signin</button></a>
+            <button id="logout-btn">Logout</button>
+          </div>
+          <span class="material-symbols-outlined"> menu </span>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-part">
+        <h2>Empower Your Ideas with Crowdfunding</h2>
+        <p>
+          Create campaigns, track progress, and engage supporters in real-time.
+        </p>
+        <button class="create-btn">Start a Campaign</button>
+      </section>
+
+      <section class="wizard-preview">
+        <h2>Campaign Creation Wizard</h2>
+        <p>A step-by-step tool to create, preview, and launch your campaign.</p>
+        <div class="Wizard-box">
+          [Drag & Drop Uploads + Live Preview Coming Soon]
+        </div>
+      </section>
+
+      <section class="donation-dashboard">
+        <h2>Donation Dashboard</h2>
+        <p>Track donations in real-time with progress bars and donor stats.</p>
+        <div class="dashboard-box">
+          [Real-Time Stats + Milestones Coming Soon]
+        </div>
+      </section>
+
+      <section class="supporter-section">
+        <h2>Supporter Interaction</h2>
+        <p>Stay connected through comments and real-time updates.</p>
+        <div class="supporter-box">[Live Comments + Updates Placeholder]</div>
+      </section>
+
+      <section class="rewards">
+        <h2>Reward Tiers (Optional)</h2>
+        <p>Incentivize donors with rewards based on contribution tiers.</p>
+        <div class="reward-box">[Reward Cards + Countdown Placeholder]</div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Together</h3>
+          <p>
+            Empowering creators and changemakers through community crowdfunding.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Meet the Team</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Thank You</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-center-button">
+          <a href="#" class="start-fundraiser-btn">Start a Fundraiser</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <p>123 Fundrise Lane<br />Innovation City, CA 90000</p>
+          <p>Email: support@togetherfund.org</p>
+          <p>Phone: 916302978291</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Together Crowdfunding. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="auth.js"></script>
+  </body>
 </html>
