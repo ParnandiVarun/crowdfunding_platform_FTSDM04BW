@@ -4,6 +4,7 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   signOut,
+  onAuthStateChanged,
 } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
 
 import {
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const password = loginPassword.value;
       try {
         await signInWithEmailAndPassword(auth, email, password);
-        window.open("index.html", "_blank");
+        window.location.href = "index.html";
       } catch (error) {
         document.getElementById("login-message").innerText = error.message;
       }
@@ -69,13 +70,30 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (logoutBtn) {
-    console.log("clicked");
     logoutBtn.addEventListener("click", async () => {
       await signOut(auth);
       window.location.href = "login.html";
     });
   }
 
+  // ✅ Handle UI changes based on user auth state
+  onAuthStateChanged(auth, (user) => {
+    const signinBtn = document.getElementById("signin-btn");
+    const userInfo = document.getElementById("user-info");
+    const userInitial = document.getElementById("user-initial");
+
+    if (user) {
+      const displayName = user.displayName || user.email;
+      const firstLetter = displayName.charAt(0).toUpperCase();
+
+      if (signinBtn) signinBtn.style.display = "none";
+      if (userInfo) userInfo.style.display = "flex";
+      if (userInitial) userInitial.textContent = firstLetter;
+    } else {
+      if (signinBtn) signinBtn.style.display = "inline-block";
+      if (userInfo) userInfo.style.display = "none";
+    }
+  });
   // Prevent Enter key from submitting forms accidentally
   document.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {

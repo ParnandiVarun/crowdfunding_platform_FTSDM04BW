@@ -20,14 +20,23 @@
             <img id="img" src="img/crowdfund_logo.jpg" />
             <h2>Together</h2>
           </div>
-
           <div class="nav-right" id="nav-menu">
-            <a class="link" href="#">Home</a> <a class="link" href="#">Donate</a
-            ><a class="link" href="#">Lend</a
-            ><a class="link" href="#">Pricing</a>
-            <a href="login.html"><button>Signin</button></a>
-            <button id="logout-btn">Logout</button>
+            <a class="link" href="#">Home</a>
+            <a class="link" href="#">Create</a>
+            <a class="link" href="#">Donation</a>
+            <a class="link" href="#">Donation Dashboard</a>
+          
+            
+<a href="login.html" id="signin-btn"><button>Signin</button></a>
+  
+<div id="user-info" class="user-info">
+  <div id="user-initial" class="user-initial">U</div>
+  <button id="logout-btn">Logout</button>
+</div>
+
+ 
           </div>
+          
           <span class="material-symbols-outlined"> menu </span>
         </nav>
       </div>
@@ -38,36 +47,43 @@
         <p>
           Create campaigns, track progress, and engage supporters in real-time.
         </p>
-        <button class="create-btn">Start a Campaign</button>
+        <a href="campaign.html" class="start-fundraiser-btn"
+          >Start a Fundraiser</a
+        >
       </section>
+       <!-- Hero Section -->
+      
+      <!-- About Crowdfunding Section -->
+      <section class="impact-container">
+  <h2>Why Crowdfunding Matters</h2>
+  <p>Together, we’re not just raising funds—we’re saving lives, restoring hope, and building a caring community.</p>
 
-      <section class="wizard-preview">
-        <h2>Campaign Creation Wizard</h2>
-        <p>A step-by-step tool to create, preview, and launch your campaign.</p>
-        <div class="Wizard-box">
-          [Drag & Drop Uploads + Live Preview Coming Soon]
-        </div>
-      </section>
-
-      <section class="donation-dashboard">
-        <h2>Donation Dashboard</h2>
-        <p>Track donations in real-time with progress bars and donor stats.</p>
-        <div class="dashboard-box">
-          [Real-Time Stats + Milestones Coming Soon]
-        </div>
-      </section>
-
-      <section class="supporter-section">
-        <h2>Supporter Interaction</h2>
-        <p>Stay connected through comments and real-time updates.</p>
-        <div class="supporter-box">[Live Comments + Updates Placeholder]</div>
-      </section>
-
-      <section class="rewards">
-        <h2>Reward Tiers (Optional)</h2>
-        <p>Incentivize donors with rewards based on contribution tiers.</p>
-        <div class="reward-box">[Reward Cards + Countdown Placeholder]</div>
-      </section>
+  <div class="impact-grid">
+    <div class="impact-card">
+      <h3>💖 Save Lives</h3>
+      <p>Your donation can fund urgent treatments, surgeries, or life-saving medications for patients in need.</p>
+    </div>
+    <div class="impact-card">
+      <h3>🧑‍⚕️ Empower Families</h3>
+      <p>Crowdfunding provides families facing financial hardship a real chance to get help quickly without debt.</p>
+    </div>
+    <div class="impact-card">
+      <h3>🌍 Community Impact</h3>
+      <p>It fosters a sense of humanity and community support where every rupee counts towards someone’s survival.</p>
+    </div>
+    <div class="impact-card">
+      <h3>⏱️ Fast & Transparent</h3>
+      <p>Funds are collected rapidly, donors receive updates, and campaigns stay transparent with real-time tracking.</p>
+    </div>
+    <div class="impact-card">
+      <h3>🌟 Your Role</h3>
+      <p>As a supporter, you become a hero in someone’s story. Your help can mean the difference between despair and hope.</p>
+    </div>
+    <div class="impact-card">
+      <h3>🤝 Be a Lifesaver</h3>
+      <p>Whether you donate, share, or create a campaign—you directly contribute to someone’s journey to recovery.</p>
+    </div>
+  </div>
     </main>
 
     <footer>
@@ -90,7 +106,9 @@
         </div>
 
         <div class="footer-center-button">
-          <a href="#" class="start-fundraiser-btn">Start a Fundraiser</a>
+          <a href="campaign.html" class="start-fundraiser-btn"
+            >Start a Fundraiser</a
+          >
         </div>
 
         <div class="footer-column">

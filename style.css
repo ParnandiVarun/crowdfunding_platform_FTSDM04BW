@@ -78,6 +78,26 @@ header {
   color: white;
 }
 
+.user-info {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-initial {
+  width: 36px;
+  height: 36px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
 nav span.material-symbols-outlined {
   display: inline;
   padding: 4px 2px;
@@ -141,18 +161,6 @@ section p {
   margin-bottom: 20px;
 }
 
-.wizard-box,
-.dashboard-box,
-.supporter-box,
-.reward-box {
-  padding: 30px;
-  background-color: white;
-  border-radius: 10px;
-  border: 2px dashed #ccc;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
 footer {
   background-color: #004d40;
   color: white;
@@ -168,6 +176,61 @@ footer {
   background-position: center;
   color: #fff;
   height: 62vh;
+}
+
+.impact-container {
+  padding: 50px 30px;
+  background-color: #e0f2f1;
+  text-align: center;
+}
+
+.impact-container h2 {
+  font-size: 30px;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.impact-container p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.impact-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  text-align: left;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.impact-card h3 {
+  font-size: 20px;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.impact-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
 }
 
 .footer-container {
