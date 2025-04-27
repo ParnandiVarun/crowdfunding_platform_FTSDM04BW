@@ -1,4 +1,4 @@
-import { auth, db } from "../firebase-config.js";
+import { auth, db } from "./firebase-config.js";
 
 import {
   signInWithEmailAndPassword,
@@ -20,6 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const loginEmail = document.getElementById("login-email");
   const loginPassword = document.getElementById("login-password");
+
+  document
+    .querySelector("nav span.material-symbols-outlined")
+    .addEventListener("click", function () {
+      document.querySelector(".nav-right").classList.toggle("active");
+    });
 
   if (loginEmail) loginEmail.value = "";
   if (loginPassword) loginPassword.value = "";
@@ -102,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Ensures inputs are cleared even if page is loaded from cache (e.g., back button)
 window.onpageshow = function (event) {
   if (event.persisted) {
     const loginEmail = document.getElementById("login-email");

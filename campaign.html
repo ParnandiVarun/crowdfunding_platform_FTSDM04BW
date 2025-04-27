@@ -10,24 +10,32 @@
   <body>
     <form id="campaignForm">
       <div class="container">
+        <h2>Create a Campaign</h2>
+
         <input
           type="text"
-          id="raiseAmount"
-          placeholder="How much do you want to raise?*"
+          id="title"
+          name="title"
+          placeholder="Campaign title"
           required
         />
-        <input
-          type="text"
-          id="relationship"
-          placeholder="Patient details.."
-          required
-        />
+
         <input
           type="text"
           id="description"
           placeholder="campaign description"
           required
         />
+        <input type="text" id="person" placeholder="Enter patient details" />
+
+        <select id="relation" name="relation" required>
+          <option value="">Select Relationship</option>
+          <option value="Self">Self</option>
+          <option value="Family">Family</option>
+          <option value="Friend">Friend</option>
+          <option value="Other">Other</option>
+        </select>
+
         <input
           type="number"
           id="goal"
@@ -37,7 +45,9 @@
         <input type="file" id="mediaUpload" accept="image/*,video/*" multiple />
         <div id="mediaPreview"></div>
 
-        <button type="submit">Submit</button>
+        <div id="test"></div>
+
+        <button type="submit">Launch campaign</button>
       </div>
     </form>
   </body>

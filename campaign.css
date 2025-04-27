@@ -17,7 +17,7 @@ body {
 
 .container {
   background: #ffffff;
-  padding: 30px;
+  padding: 32px;
   border-radius: 10px;
   width: 100%;
   max-width: 450px;
@@ -25,7 +25,12 @@ body {
   box-shadow: 0 0 7px 1px rgba(24, 41, 33, 0.5);
 }
 
-input {
+div > h2 {
+  margin-bottom: 10px;
+}
+
+input,
+select {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -47,7 +52,7 @@ button {
   border: none;
   font-size: 16px;
   transition: 0.2s;
-  margin-top: 4px;
+  margin-top: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
